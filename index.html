@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Anonis</title>
+
+  <!--font for 8bite-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <!--apply main.css -->
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+
+
+    $(document).ready(function () {
+      $("#show-popup1").click(function () {
+        $("#popup1").show();
+      });
+      $("#hide-popup1").click(function () {
+        $("#popup1").hide();
+      });
+    });
+
+    $(document).ready(function () {
+      $("#show-fashion").click(function () {
+        $("#fashion").show();
+        $("#popup1").hide();
+      });
+      $("#hide-fashion").click(function () {
+        $("#fashion").hide();
+      });
+    });
+
+    $(document).ready(function () {
+      $("#show-stylist").click(function () {
+        $("#stylist").show();
+        $("#popup1").hide();
+      });
+      $("#hide-stylist").click(function () {
+        $("#stylist").hide();
+      });
+    });
+
+
+    $(document).ready(function () {
+      $("#show-popup2").click(function () {
+        $("#popup2").show();
+      });
+      $("#hide-popup2").click(function () {
+        $("#popup2").hide();
+      });
+    });
+
+    $(document).ready(function () {
+      $("#show-popup3").click(function () {
+        $("#popup3").show();
+      });
+      $("#hide-popup3").click(function () {
+        $("#popup3").hide();
+      });
+    });
+
+    $(document).ready(function () {
+      $("#show-workingorder_fashion").click(function () {
+        $("#workingorder_fashion").show();
+        $("#popup3").hide();
+      });
+      $("#hide-workingorder_fashion").click(function () {
+        $("#workingorder_fashion").hide();
+      });
+    });
+
+
+    $(document).ready(function () {
+      $("#show-workingorder_stylist").click(function () {
+        $("#workingorder_stylist").show();
+        $("#popup3").hide();
+      });
+      $("#hide-workingorder_stylist").click(function () {
+        $("#workingorder_stylist").hide();
+      });
+    });
+
+
+
+    $(document).ready(function () {
+      $("#show-popup4").click(function () {
+        $("#popup4").show();
+      });
+      $("#hide-popup4").click(function () {
+        $("#popup4").hide();
+      });
+    });
+
+    $(document).ready(function () {
+      $("#show-request_fashion").click(function () {
+        $("#fashion-request_overlay").show();
+        $("#popup4").hide();
+      });
+      $("#fashion-request_close").click(function () {
+        $("#fashion-request_overlay").hide();
+      });
+      $("#fashion-request_cancel").click(function () {
+        $("#fashion-request_overlay").hide();
+      });
+    });
+
+
+    $(document).ready(function () {
+      $("#show-request_stylist").click(function () {
+        $("#stylist-request_overlay").show();
+        $("#popup4").hide();
+      });
+      $("#stylist-request_close").click(function () {
+        $("#stylist-request_overlay").hide();
+      });
+      $("#stylist-request_cancel").click(function () {
+        $("#stylist-request_overlay").hide();
+      });
+    });
+
+  </script>
+</head>
+
+<body>
+  <br>
+  <span class="symbol"></span><span class="title">
+    <lofifont class="regular">
+      <font color="white">Anonis.kr</font>
+    </lofifont>
+  </span>
+  <br><br><br>
+
+
+  <div style="display: flex; flex-direction: column; position: absolute; top: 3%; right: 1%;">
+    <button id="show-popup2">
+      <img src="img/Icon_computer.png" width="70px" height="70px" alt="Show Pop-up2">
+      <p class='line_spacing'>Anonis</p>
+    </button>
+  </div>
+
+  <div style="display: flex; flex-direction: column; position: absolute; top: 18%; right: 1%;">
+    <button id="show-popup1">
+      <img src="img/Icon_folder1.png" width="70px" height="70px" alt="Show Pop-up1">
+      <p class='line_spacing'>Portfolio</p>
+    </button>
+  </div>
+
+  <div style="display: flex; flex-direction: column; position: absolute; top: 33%; right: 1%;">
+    <button id="show-popup3">
+      <img src="img/Icon_note.png" width="70px" height="70px" alt="Show Pop-up3">
+      <p class='line_spacing'>Working order</p>
+    </button>
+  </div>
+
+  <div style="display: flex; flex-direction: column; position: absolute; top : 48%; right: 1%;">
+    <button id="show-popup4">
+      <img src="img/Icon_blank.png" width="70px" height="70px" alt="Show Pop-up4">
+      <p class='line_spacing'>Request</p>
+    </button>
+  </div>
+
+  <div style="display: flex; flex-direction: column; position: absolute; top : 63%; right: 1%;">
+    <button id="show-popup5">
+      <a href="https://www.instagram.com/anonis_kr/" target="_blank">
+        <img src="img/insta.png" width="70px" height="70px" alt="Show Pop-up5"></a>
+      <p class='line_spacing'>instagram</p>
+    </button>
+  </div>
+
+  <div style="display: flex; flex-direction: column; position: absolute; top : 78%; right: 1%;">
+    <button id="show-popup6">
+      <a href="https://smartstore.naver.com/anonis/" target="_blank">
+        <img src="img/smartstore.png" width="70px" height="70px" alt="Show Pop-up5"></a>
+      <p class='line_spacing'>smart store</p>
+    </button>
+  </div>
+
+
+
+
+
+  <div id="popup1" style="display:none">
+
+    <div id="popup-content1_exit">
+      <div style="position: absolute; top: 8px; left: 15px;">
+        Portfolio
+      </div>
+
+      <div style="position: absolute; top: 0px; right: 0;">
+        <button id="hide-popup1"><img src="img/btn-folder-close.png" width="15px" height="15px"></button>
+      </div>
+    </div>
+
+
+
+    <div id="popup-content1">
+
+
+      <div>
+        <button id="show-fashion">
+          <img src="img/Icon_folder2.png" width="80%" height="80%" alt="Show portfolio">
+        </button>
+        <p class='line_spacing'>Fashion</p>
+      </div>
+
+      <div>
+        <button id="show-stylist">
+          <img src="img/Icon_folder2.png" width="80%" height="80%" alt="Show portfolio">
+          <p class='line_spacing'>Stylist</p>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <div id="fashion" style="display:none">
+
+    <div id="popup-fashion_exit">
+      <div style="position: absolute; top: 3px; left: 10px;">
+        Portfolio-Fashion
+      </div>
+
+      <div style="position: absolute; top: -1px; right: 0;">
+        <button id="hide-fashion"><img src="img/btn-folder-close.png" width="15px" height="15px"></button>
+      </div>
+    </div>
+
+
+
+    <div id="popup-fashion">
+      <div class="scroll-image">
+        <div style="margin-top: -60px;">
+          <p class='line_spacing'></p>
+        </div>
+
+
+        <!--
+        <div id="popup">
+          <div id="gallery">
+            <img id="image">
+            <div id="prev-button">&lt;</div>
+            <div id="next-button">&gt;</div>
+          </div>
+          <div id="close-button">&times;</div>
+        </div>
+        <br><br>-->
+        <br>
+
+        <div>
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <br>
+          <span style="font-size: 13px;">Anonis_1.jpg　　Anonis_2.jpg　　Anonis_3.jpg </span>
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <div>
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <br>
+          <span style="font-size: 13px;">Anonis_4.jpg　　Anonis_5.jpg　　Anonis_6.jpg </span>
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+
+        <div>
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <br>
+          <span style="font-size: 13px;">Anonis_7.jpg　　Anonis_8.jpg　　Anonis_9.jpg </span>
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+
+        <div>
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <br>
+          <span style="font-size: 13px;">Anonis_10.jpg　Anonis_11.jpg　Anonis_12.jpg </span>
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+
+        <div>
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <br>
+          <span style="font-size: 13px;">Anonis_13.jpg　Anonis_14.jpg　Anonis_15.jpg </span>
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+        <div>
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <br>
+          <span style="font-size: 13px;">Anonis_16.jpg　Anonis_17.jpg　Anonis_18.jpg </span>
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+        <div>
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <br>
+          <span style="font-size: 13px;">Anonis_19.jpg　Anonis_20.jpg　Anonis_21.jpg </span>
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+        <div>
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <br>
+          <span style="font-size: 13px;">Anonis_22.jpg　Anonis_23.jpg　Anonis_24.jpg </span>
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+        <div>
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <br>
+          <span style="font-size: 13px;">Anonis_25.jpg　Anonis_26.jpg　Anonis_27.jpg </span>
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+        <div>
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <br>
+          <span style="font-size: 13px;">Anonis_28.jpg　Anonis_29.jpg　Anonis_30.jpg </span>
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+
+        <div>
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <br>
+          <span style="font-size: 13px;">Anonis_31.jpg　Anonis_32.jpg　Anonis_33.jpg </span>
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+
+        <div>
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <br>
+          <span style="font-size: 13px;">Anonis_34.jpg　Anonis_35.jpg　Anonis_36.jpg </span>
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+
+        <div>
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <br>
+          <span style="font-size: 13px;">Anonis_37.jpg　Anonis_38.jpg　Anonis_39.jpg </span>
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+
+        <div>
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <br>
+          <span style="font-size: 13px;">Anonis_40.jpg　Anonis_41.jpg　Anonis_42.jpg </span>
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+
+        <div>
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <br>
+          <span style="font-size: 13px;">Anonis_43.jpg　Anonis_44.jpg　Anonis_45.jpg </span>
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+
+        <div>
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <br>
+          <span style="font-size: 13px;">Anonis_46.jpg　Anonis_47.jpg　Anonis_48.jpg </span>
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+
+        <div>
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <br>
+          <span style="font-size: 13px;">Anonis_49.jpg　Anonis_50.jpg　Anonis_51.jpg </span>
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+        <div>
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <br>
+          <span style="font-size: 13px;">Anonis_52.jpg　Anonis_53.jpg　Anonis_54.jpg </span>
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+        <div>
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <br>
+          <span style="font-size: 13px;">Anonis_55.jpg　Anonis_56.jpg　Anonis_57.jpg </span>
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+        <div>
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <br>
+          <span style="font-size: 13px;">Anonis_58.jpg　Anonis_59.jpg　Anonis_60.jpg </span>
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+        <div>
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <img class="thumbnail" src="/img/Icon_window.png">　　
+          <br>
+          <span style="font-size: 13px;">Anonis_61.jpg　Anonis_62.jpg　Anonis_63.jpg </span>
+        </div>
+        <br>
+        <br>
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <div id="popup">
+    <div id="gallery">
+      <img id="image">
+      <div id="prev-button">&lt;</div>
+      <div id="next-button">&gt;</div>
+    </div>
+    <div id="close-button">&times;</div>
+  </div>
+
+
+
+  <div id="stylist" style="display:none">
+
+    <div id="popup-stylist_exit">
+      <div style="position: absolute; top: 3px; left: 10px;">
+        Portfolio-stylist
+      </div>
+
+      <div style="position: absolute; top: -1px; right: 0;">
+        <button id="hide-stylist"><img src="img/btn-folder-close.png" width="15px" height="15px"></button>
+      </div>
+    </div>
+
+
+
+    <div id="popup-stylist">
+      <div class="scroll-image">
+        <div style="margin-top: -60px;">
+          <p class='line_spacing'></p>
+        </div>
+
+        <div id="videoPopup" class="video_popup">
+          <div class="video_popupContent">
+            <span class="video_close" onclick="closeVideo()" style='cursor:pointer;'>&times;</span>
+            <iframe id="videoPlayer" width="100%" height="120%" src="" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+
+
+
+
+        <div>
+          <br><br>
+          <img id="image" src="/img/Icon_media.png" onclick="openVideo1()">
+          　
+          <img id="image" src="/img/Icon_media.png" onclick="openVideo2()">
+          　
+          <img id="image" src="/img/Icon_media.png" onclick="openVideo3()"><br>
+          <span style="font-size: 11.8px;">MV)ICE_서예안　　삼성전자_뉴스룸　　하기스네이처</span>
+
+        </div>
+
+        <div>
+          <br><br>
+          <img id="image" src="/img/Icon_media.png" onclick="openVideo4()">
+          　
+          <img id="image" src="/img/Icon_media.png" onclick="openVideo5()">
+          　
+          <img id="image" src="/img/Icon_media.png" onclick="openVideo6()"><br>
+          <span style="font-size: 11.8px;">제로페이#번외　　제로페이#소문편　　제로페이#비교편</span>
+        </div>
+
+        <div>
+          <br><br>
+          <img id="image" src="/img/Icon_media.png" onclick="openVideo7()">
+          　
+          <img id="image" src="/img/Icon_media.png" onclick="openVideo8()">
+          　
+          <img id="image" src="/img/Icon_media.png" onclick="openVideo9()"><br>
+          <span style="font-size: 11.7px;">제로페이#결제편　　제로페이#옴니버스편　　비즈플레이</span>
+        </div>
+
+        <div>
+          <br><br>
+          <img id="image" src="/img/Icon_media.png" onclick="openVideo10()">
+          　
+          <img id="image" src="/img/Icon_media.png" onclick="openVideo11()">
+          　
+          <img id="image" src="/img/Icon_media.png" onclick="openVideo12()"><br>
+          <span style="font-size: 11.8px;">　SK하이닉스　　Americantourister　　　MV)D-1_구현</span>
+        </div>
+
+        <div>
+          <br><br>
+          <img id="image" src="/img/Icon_media.png" onclick="openVideo13()">
+          　
+          <img id="image" src="/img/Icon_media.png" onclick="openVideo14()">
+          　
+          <img id="image" src="/img/Icon_media.png" onclick="openVideo15()"><br>
+          <span style="font-size: 11.8px;">2018 Winter　　　2018Summer　　　2017Summer</span><br>
+          <span style="font-size: 11.8px;">　ANONIS　　　　ANONIS　　　　　　ANONIS</span>
+        </div>
+
+        <div>
+          <br><br>
+          <img id="image" src="/img/Icon_media.png" onclick="openVideo16()"><br>
+          <span style="font-size: 11.8px;">2016 REMIND ANONIS</span>
+        </div>
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="popup2" style="display:none">
+
+    <div id="popup-content2_exit">
+      <div style="position: absolute; top: 3px; left: 10px;">
+        Anonis
+      </div>
+
+      <div style="position: absolute; top: -1px; right: 0;">
+        <button id="hide-popup2"><img src="img/btn-folder-close.png" width="15px" height="15px"></button>
+      </div>
+
+    </div>
+
+
+
+
+
+
+    <div id="popup-content2">
+      <div class="scroll-image">
+        <div style="margin-top: -60px;">
+          <p class='line_spacing'></p>
+        </div>
+
+        <div id="popup-content2-title">
+          <p class='line_spacing'>　</p>
+          <div align="left"><span style="font-size: 25px; color: white;">　ANONIS 이력...</span></div>
+        </div>
+
+        <div align="left" width="200%">
+          <span style="font-size: 15px; color:white" >
+
+            <p><u>2022년</u></p>
+            <p>1월 – 삼성전자 뉴스룸 광고 스타일리스트<br>
+               8월 – I-SCREAM(아이스크림) – 서예안 <br>뮤직비디오 스타일리스트</p>
+            <br>
+            <p><u>2021년</u></p>
+            <p>4월 – 제로페이모바일 TV 광고 스타일리스트<br>
+               5월 – 하기스네이처메이드광고 스타일리스트</p>
+            <br>
+            <p><u>2020년</u></p>
+            <p>3월 – 우리은행won뱅킹광고 스타일리스트<br>
+               5월 - SK하이닉스 광고 스타일리스트<br>
+               5월 – 비즈플레이광고 스타일리스트</p>
+            <br>
+            <p><u>2017년</u></p>
+            <p>3월 – ‘D-1 -9hyun(구현)’ 뮤직비디오 <br>스타일리스트<br>
+               11월 – Americantourister(아메리칸투어리스터)<br>캐리어 롯데마트 광고 스타일리스트</p>
+          
+          
+            <br><br><br>
+            <u>2019</u> (주)주나패밀리 섬유(원단) 사원<br>
+            - 원단 영업부 -> 생산지원팀<br>
+            - 원단 영업(동대문종합시장) , 원단 생산지원<br>
+            <br><br>
+            <u>2018</u> (주)아거스어패럴 프로모션 디자이너<br>
+            - 룸패커(메인), 66걸즈(서브) 프로모션 <br>　의류핸들링(다이마루)<br>
+            <br><br>
+            <u>2016</u> ANONIS(아노니스) 디자이너 브랜드 런칭<br>
+            <br><br>
+            <u>2014</u> AYAMORIE(아야모리에) 디자이너(남성복)<br>
+            - 2014~15년도 의류 및 잡화상품 기획 및 디자인<br>
+            - 전국매장 VMD<br>
+            <br><br>
+          <u>2013</u> SEIZE SEI(시즈세이) 디자이너(남성복)<br>
+          - 의류 디자인 및 핸들링<br>
+          - ZOSUNGA 2013S/S 컬렉션 참여<br>
+          <br><br>
+          <u>2012</u> 서진패션 디자이너<br>
+          - CJ홈쇼핑 '비욘드클로젯' 디자인 생산 및 납품<br>
+          <br><br>
+          <u>2012</u> 우송정보대학 패션디자인전공 졸업<br>
+        </span>
+
+        </div>
+
+        
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div id="popup3" style="display:none">
+
+    <div id="popup-content3_exit">
+      <div style="position: absolute; top: 3px; left: 10px;">
+        Working Order
+      </div>
+
+      <div style="position: absolute; top: -1px; right: 0;">
+        <button id="hide-popup3"><img src="img/btn-folder-close.png" width="15px" height="15px"></button>
+      </div>
+
+    </div>
+
+
+
+
+    <div id="popup-content3">
+
+      <div>
+        <button id="show-workingorder_fashion">
+          <img src="img/Icon_note.png" width="50%" height="50%" alt="Show portfolio">
+        </button>
+        <p class='line_spacing'>working_order_Fashion</p>
+      </div>
+
+      <br><br>
+
+      <div>
+        <button id="show-workingorder_stylist">
+          <img src="img/Icon_note.png" width="50%" height="50%" alt="Show portfolio">
+          <p class='line_spacing'>workingorder_Stylist</p>
+        </button>
+      </div>
+
+
+
+    </div>
+  </div>
+
+
+  <div id="workingorder_fashion" style="display:none">
+
+    <div id="workingorder_fashion-content_exit">
+      <div style="position: absolute; top: 3px; left: 7px;">
+        <img src="img/Icon_note.png" width="20px" height="20px" alt="Show portfolio">
+        <span style="color: white">Working Order - Fashion.txt</span>
+      </div>
+
+      <div style="position: absolute; top: -5px; right: 0;">
+        <button id="hide-workingorder_fashion"><img src="img/Icon_x.png" width="100%" height="auto"></button>
+      </div>
+    </div>
+
+    <div id="workingorder_fashion-content_filename">
+      <div style="position: absolute; top: 3px; left: 10px;">
+        <span style="font-size: 14px;">File　Edit　Search　Help</span>
+      </div>
+    </div>
+
+
+
+    <div id="workingorder_fashion-content">
+      <div style="margin-top: -60px;">
+        <p class='line_spacing'></p>
+      </div>
+
+      <div align="left" width="10%">
+
+        <h2>※작업순서(의류제작)</h2>
+
+        ① Request(문의하기)를 토대로<br> 1:1 미팅날짜 잡기<br><br>
+        ② 원하는 디자인을 토대로 스와치 수배하기<br><br>
+        ③ 샘플지시서 작성<br><br>
+        ④ 샘플 완성<br><br>
+        ⑤ 샘플 완성 후 컨펌<br><br>
+        ⑥ 컨펌 후 생산 시작!!<br><br>
+        ⑦ 작업 지시서 작성<br><br>
+        ⑧ 원부자재 발주<br><br>
+        ⑨ 생산하기<br><br>
+        ⑩ 생산 후 출고처로 출고하기
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="workingorder_stylist" style="display:none">
+    <!--
+    <div id="workingorder_stylist-content_exit">
+      <div style="position: absolute; top: 3px; left: 10px;">
+        Stylist
+      </div>-->
+
+    <div id="workingorder_stylist-content_exit">
+      <div style="position: absolute; top: 3px; left: 7px;">
+        <img src="img/Icon_note.png" width="20px" height="20px" alt="Show portfolio">
+        <span style="color: white">Working Order - Stylist.txt</span>
+      </div>
+
+
+      <div style="position: absolute; top: -5px; right: 0;">
+        <button id="hide-workingorder_stylist"><img src="img/Icon_x.png" height="2%"></button>
+      </div>
+    </div>
+
+    <div id="workingorder_stylist-content_filename">
+      <div style="position: absolute; top: 3px; left: 10px;">
+        <span style="font-size: 14px;">File　Edit　Search　Help</span>
+      </div>
+    </div>
+
+
+
+
+    <div id="workingorder_stylist-content">
+      <div class="scroll-image">
+        <div style="margin-top: -60px;">
+          <p class='line_spacing'></p>
+        </div>
+
+        <div align="left" width="10%">
+
+          <h2>※작업순서(스타일리스트)</h2>
+
+          ① Request(문의하기)를 토대로<br> 1:1 미팅날짜 잡기<br><br>
+          ② 콘티나 미팅을 통하여 PPT 작성<br><br>
+          ③ PPT컨펌<br><br>
+          ④ 컨펌 후 출연배우 및 모델분들<br> 스펙으로 의상 및 소품 준비하기<br><br>
+          ⑤ 촬영날짜 장소로 이동<br><br>
+          ⑥ 촬영하기<br><br>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <div id="popup4" style="display:none">
+
+    <div id="popup-content4_exit">
+      <div style="position: absolute; top: 3px; left: 10px;">
+        Request order</div>
+      <div style="position: absolute; top: -1px; right: 0;">
+        <button id="hide-popup4"><img src="img/btn-folder-close.png" width="15px" height="15px"></button>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div id="popup-content4">
+      <div style="margin-top: -60px;"></div>
+      <p class='line_spacing'></p><br><br>
+
+      <div>
+        <button id="show-request_fashion">
+          <img src="img/Icon_blank.png" width="50%" height="50%" alt="Show portfolio">
+        </button>
+        <p class='line_spacing'>Request-Fashion.exe</p>
+      </div><br><br><br>
+
+      <div>
+        <button id="show-request_stylist">
+          <img src="img/Icon_blank.png" width="50%" height="50%" alt="Show portfolio">
+          <p class='line_spacing'>Request-Stylist.exe</p>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="fashion-request_overlay">
+
+
+
+    <div id="fashion-request_exit">
+      <div style="position: absolute; top: 6px; left: 7px;">
+        <img src="img/Icon_blank.png" width="20px" height="20px" alt="Show portfolio">
+        <span style="color: white">Request_Fashion.exe</span>
+      </div>
+      <div style="position: absolute; top: -5px; right: 0;">
+        <button id="fashion-request_close"><img src="img/Icon_x.png" height="2%"></button>
+      </div>
+    </div>
+
+
+    <div id="fashion-request_filename">
+      <div style="position: absolute; top: 3px; left: 10px;">
+        <span style="font-size: 14px;">File　Edit　Search　Help</span>
+      </div>
+    </div>
+
+
+
+    <div id="fashion-request">
+      <div id="fashion-content">
+
+
+        <div class="contact-area bg-color1 p-t-130 p-b-130">
+          <div class="request_container">
+            <article class="" data-aos="fade-up">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="comment-form">
+                    <script data-cfasync="false" type="text/javascript"
+                      src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+                    <div class="inner-title">
+                      <!--<h5 class="heading-5">Send Your Message</h5>-->
+                    </div><br>
+                    <form id="emailForm" class="gform" method="POST" data-email="joeingerman32@gmail.com"
+                      action="https://script.google.com/macros/s/AKfycbw2yG1xM3us6GFYvTx_uR3pfRwbCt6RIhqf7NESVzwMD3xgkCJkeHDnskX8CJW4SMs7/exec">
+                      ※문의하기(의류제작) <br><br><br>
+                      <div class="form-row">
+                        <div class="col-md-12">
+                          <div class="form-row">
+                            <div class="col-md-12">
+                              <div class="form-group">성함<span style="font-size: 17px;">　　　　　　　</span>
+                                <input type="text" class="form-control" id="성함" name="성함" placeholder=" " required>
+                              </div>
+                            </div>
+                          </div><br>
+                          <div class="form-row">
+                            <div class="col-md-12">
+                              <div class="form-group"> 회사명(상호명)<span style="font-size: 21px;">　　</span>
+                                <input type="text" class="form-control" id="회사명(상호명)" name="회사명(상호명)" placeholder=" "
+                                  required>
+                              </div>
+                            </div>
+                          </div><br>
+                          <div class="form-row">
+                            <div class="col-md-12">
+                              <div class="form-group">연락처<span style="font-size: 17px;">　　　　　　</span>
+                                <input type="text" class="form-control" id="연락처" name="연락처" placeholder=" " required>
+                              </div>
+                            </div>
+                          </div><br>
+                          <div class="form-row">
+                            <div class="col-md-12">
+                              <div class="form-group">홈페이지 URL<span style="font-size: 17px;">　　　</span>
+                                <input type="text" class="form-control" id="홈페이지URL" name="홈페이지URL"
+                                  placeholder="or SNS계정 입력바랍니다.">
+                              </div>
+                            </div>
+                          </div><br>
+                          <div class="form-row">
+                            <div class="col-md-12">
+                              <div class="form-group">제작하려는 의류종류
+                                <input type="text" class="form-control" id="제작하려는_의류종류" name="제작하려는_의류종류"
+                                  placeholder="자켓,셔츠,티셔츠(긴팔,반팔) 등" required>
+                              </div>
+                            </div>
+                          </div><br>
+                          <div class="form-row">
+                            <div class="col-md-12">
+                              <div class="form-group">원하시는 생산수량　
+                                <input type="text" class="form-control" id="원하시는 생산수량" name="원하시는_생산수량"
+                                  placeholder="수량 구분하여 부탁드립니다." required>
+                              </div>
+                            </div>
+                          </div><br>
+                          <div class="form-row">
+                            <div class="col-md-12">
+                              <div class="form-group">샘플 유무<span style="font-size: 17px;">　　　　　　</span>
+                                <select name="샘플유무" size="1">　　　　　　　　　
+                                  <option value="있음"><span style="font-size: 17px;">　　　　</span>있음<span
+                                      style="font-size: 17px;">　　　　</span></option>
+                                  <option value="없음"><span style="font-size: 17px;">　　　　</span>없음<span
+                                      style="font-size: 17px;">　　　　</span></option>
+                                </select>
+                                <!--<input type="text" class="form-control" id="샘플유무" name="샘플유무" placeholder="Your Message" required>-->
+                              </div>
+                            </div>
+                          </div><br>
+                          <div class="form-row">
+                            <div class="col-md-12">
+                              <div style="display:inline-block;vertical-align:top;">
+                                상세설명　　　　　　
+                              </div>
+                              <div style="display:inline-block;">
+                                <div class="form-group">
+                                  <textarea class="form-control" id="상세설명" name="상세설명" rows="6"
+                                    placeholder="자세히 적어주시면 감사합니다."></textarea>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div style="display:none" class="thankyou_message">
+                          </div>
+                          <!--스타일리스트란에 존재하기에, 팝업 두번 울리는걸 방지하기 위해 주석처리-->
+                          <!--<script type="text/javascript" src="message.js"></script>-->
+                          <div class="form-group m-0">
+                            <br>
+                            <button id="btnSubmit">보내기</button>
+                            <button id="fashion-request_cancel">취소</button>
+                            <!--<button id="btnSubmit" class="btn-submit mt-2">취소</button>-->
+                            <br><br>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="stylist-request_overlay">
+
+    <!--
+    <div id="stylist-request_exit">
+      스타일리스트
+      <button id="stylist-request_close"><img src="img/x_icon.jpg" height="30px"></button>
+    </div>-->
+
+    <div id="stylist-request_exit">
+      <div style="position: absolute; top: 6px; left: 7px;">
+        <img src="img/Icon_blank.png" width="20px" height="20px" alt="Show portfolio">
+        <span style="color: white">Request_Styilst.exe</span>
+      </div>
+      <div style="position: absolute; top: -5px; right: 0;">
+        <button id="stylist-request_close"><img src="img/Icon_x.png" height="2%"></button>
+      </div>
+    </div>
+
+
+    <div id="stylist-request_filename">
+      <div style="position: absolute; top: 3px; left: 10px;">
+        <span style="font-size: 14px;">File　Edit　Search　Help</span>
+      </div>
+    </div>
+
+
+
+    <div id="stylist-request">
+      <div id="stylist-content">
+
+
+        <div class="contact-area bg-color1 p-t-130 p-b-130">
+          <div class="request_container">
+            <article class="" data-aos="fade-up">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="comment-form">
+                    <script data-cfasync="false" type="text/javascript"
+                      src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+                    <div class="inner-title">
+                      <!--<h5 class="heading-5">Send Your Message</h5>-->
+                    </div><br>
+                    <form id="emailForm" class="gform" method="POST" data-email="joeingerman32@gmail.com"
+                      action="https://script.google.com/macros/s/AKfycbw2yG1xM3us6GFYvTx_uR3pfRwbCt6RIhqf7NESVzwMD3xgkCJkeHDnskX8CJW4SMs7/exec">
+                      ※문의하기(스타일리스트) <br><br><br>
+                      <div class="form-row">
+                        <div class="col-md-12">
+                          <div class="form-row">
+                            <div class="col-md-12">
+                              <div class="form-group">성함<span style="font-size: 17px;">　　　　　　　</span>
+                                <input type="text" class="form-control" id="성함" name="성함" placeholder=" " required>
+                              </div>
+                            </div>
+                          </div><br>
+                          <div class="form-row">
+                            <div class="col-md-12">
+                              <div class="form-group"> 회사명<span style="font-size: 17px;">　　　　　　</span>
+                                <input type="text" class="form-control" id="회사명(상호명)" name="회사명(상호명)" placeholder=" "
+                                  required>
+                              </div>
+                            </div>
+                          </div><br>
+                          <div class="form-row">
+                            <div class="col-md-12">
+                              <div class="form-group">연락처<span style="font-size: 17px;">　　　　　　</span>
+                                <input type="text" class="form-control" id="연락처" name="연락처" placeholder=" " required>
+                              </div>
+                            </div>
+                          </div><br>
+                          <div class="form-row">
+                            <div class="col-md-12">
+                              <div class="form-group">홈페이지 URL<span style="font-size: 17px;">　　　</span>
+                                <input type="text" class="form-control" id="홈페이지URL" name="홈페이지URL"
+                                  placeholder="or SNS계정 입력바랍니다.">
+                              </div>
+                            </div>
+                          </div><br>
+                          <div class="form-row">
+                            <div class="col-md-12">
+                              <div class="form-group">촬영날짜,시간　　　
+                                <input type="text" class="form-control" id="촬영날짜,시간" name="촬영날짜,시간" required>
+                              </div>
+                            </div>
+                          </div><br>
+                          <div class="form-row">
+                            <div class="col-md-12">
+                              <div class="form-group">촬영장소<span style="font-size: 17px;">　　　　　</span>
+                                <input type="text" class="form-control" id="촬영장소" name="촬영장소" required>
+                              </div>
+                            </div>
+                          </div><br>
+                          <div class="form-row">
+                            <div class="col-md-12">
+                              <div class="form-group">콘티(Continuity) 유무　<span style="font-size: 17px;"></span>
+                                <select name="콘티유무" size="1">　　　　　　　　　
+                                  <option value="있음"><span style="font-size: 17px;">　　　　</span>있음<span
+                                      style="font-size: 17px;">　　　　</span></option>
+                                  <option value="없음"><span style="font-size: 17px;">　　　　</span>없음<span
+                                      style="font-size: 17px;">　　　　</span></option>
+                                </select>
+                                <!--<input type="text" class="form-control" id="샘플유무" name="샘플유무" placeholder="Your Message" required>-->
+                              </div>
+                            </div>
+                          </div><br>
+                          <div class="form-row">
+                            <div class="col-md-12">
+                              <div style="display:inline-block;vertical-align:top;">
+                                상세설명　　　　　　
+                              </div>
+                              <div style="display:inline-block;">
+                                <div class="form-group">
+                                  <textarea class="form-control" id="상세설명" name="상세설명" rows="6"
+                                    placeholder="자세히 적어주시면 감사합니다."></textarea>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div style="display:none" class="thankyou_message">
+                          </div>
+                          <script type="text/javascript" src="message.js"></script>
+                          <div class="form-group m-0">
+                            <br>
+                            <button id="btnSubmit" class="btn-submit mt-2">보내기</button>
+                            <button id="stylist-request_cancel" class="button_radius">취소</button>
+                            <!--<button id="btnSubmit" class="btn-submit mt-2">취소</button>-->
+                            <br><br>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="test">
+
+  </div>
+  <script src="main.js"></script>
+  <script type="text/javascript" src="request.js"></script>
+</body>
+
+</html>
