@@ -1,6 +1,22 @@
 /* 갤러리 팝업을 위한 코드 */
 //var images = ["/img/portfolio/1.png", "/img/portfolio/2.png", "/img/portfolio/3.png", "/img/portfolio/4.png", "/img/portfolio/5.png"];
-var images = ["/img/portfolio/img (1).jpg", "/img/portfolio/img (2).jpg", "/img/portfolio/img (3).jpg", "/img/portfolio/img (4).jpg", "/img/portfolio/img (5).jpg", "/img/portfolio/img (6).jpg", "/img/portfolio/img (7).jpg", "/img/portfolio/img (8).jpg", "/img/portfolio/img (9).jpg", "/img/portfolio/img (10).jpg", "/img/portfolio/img (11).jpg", "/img/portfolio/img (12).jpg", "/img/portfolio/img (13).jpg", "/img/portfolio/img (14).jpg", "/img/portfolio/img (15).jpg", "/img/portfolio/img (16).jpg", "/img/portfolio/img (17).jpg", "/img/portfolio/img (18).jpg", "/img/portfolio/img (19).jpg", "/img/portfolio/img (20).jpg", "/img/portfolio/img (21).jpg", "/img/portfolio/img (22).jpg", "/img/portfolio/img (23).jpg", "/img/portfolio/img (24).jpg", "/img/portfolio/img (25).jpg", "/img/portfolio/img (26).jpg", "/img/portfolio/img (27).jpg", "/img/portfolio/img (28).jpg", "/img/portfolio/img (29).jpg", "/img/portfolio/img (30).jpg", "/img/portfolio/img (31).jpg", "/img/portfolio/img (32).jpg", "/img/portfolio/img (33).jpg", "/img/portfolio/img (34).jpg", "/img/portfolio/img (35).jpg", "/img/portfolio/img (36).jpg", "/img/portfolio/img (37).jpg", "/img/portfolio/img (38).jpg", "/img/portfolio/img (39).jpg", "/img/portfolio/img (40).jpg", "/img/portfolio/img (41).jpg", "/img/portfolio/img (42).jpg", "/img/portfolio/img (43).jpg", "/img/portfolio/img (44).jpg", "/img/portfolio/img (45).jpg", "/img/portfolio/img (46).jpg", "/img/portfolio/img (47).jpg", "/img/portfolio/img (48).jpg", "/img/portfolio/img (49).jpg", "/img/portfolio/img (50).jpg", "/img/portfolio/img (51).jpg", "/img/portfolio/img (52).jpg", "/img/portfolio/img (53).jpg", "/img/portfolio/img (54).jpg", "/img/portfolio/img (55).jpg", "/img/portfolio/img (56).jpg", "/img/portfolio/img (57).jpg", "/img/portfolio/img (58).jpg", "/img/portfolio/img (59).jpg", "/img/portfolio/img (60).jpg", "/img/portfolio/img (61).jpg", "/img/portfolio/img (62).jpg", "/img/portfolio/img (63).jpg"];
+var images = [
+"/img/portfolio/img (1).jpg", "/img/portfolio/img (2).jpg", "/img/portfolio/img (3).jpg", "/img/portfolio/img (4).jpg", 
+"/img/portfolio/img (5).jpg", "/img/portfolio/img (6).jpg", "/img/portfolio/img (7).jpg", "/img/portfolio/img (8).jpg", 
+"/img/portfolio/img (9).jpg", "/img/portfolio/img (10).jpg", "/img/portfolio/img (11).jpg", "/img/portfolio/img (12).jpg", 
+"/img/portfolio/img (13).jpg", "/img/portfolio/img (14).jpg", "/img/portfolio/img (15).jpg", "/img/portfolio/img (16).jpg", 
+"/img/portfolio/img (17).jpg", "/img/portfolio/img (18).jpg", "/img/portfolio/img (19).jpg", "/img/portfolio/img (20).jpg", 
+"/img/portfolio/img (21).jpg", "/img/portfolio/img (22).jpg", "/img/portfolio/img (23).jpg", "/img/portfolio/img (24).jpg", 
+"/img/portfolio/img (25).jpg", "/img/portfolio/img (26).jpg", "/img/portfolio/img (27).jpg", "/img/portfolio/img (28).jpg", 
+"/img/portfolio/img (29).jpg", "/img/portfolio/img (30).jpg", "/img/portfolio/img (31).jpg", "/img/portfolio/img (32).jpg", 
+"/img/portfolio/img (33).jpg", "/img/portfolio/img (34).jpg", "/img/portfolio/img (35).jpg", "/img/portfolio/img (36).jpg", 
+"/img/portfolio/img (37).jpg", "/img/portfolio/img (38).jpg", "/img/portfolio/img (39).jpg", "/img/portfolio/img (40).jpg", 
+"/img/portfolio/img (41).jpg", "/img/portfolio/img (42).jpg", "/img/portfolio/img (43).jpg", "/img/portfolio/img (44).jpg", 
+"/img/portfolio/img (45).jpg", "/img/portfolio/img (46).jpg", "/img/portfolio/img (47).jpg", "/img/portfolio/img (48).jpg", 
+"/img/portfolio/img (49).jpg", "/img/portfolio/img (50).jpg", "/img/portfolio/img (51).jpg", "/img/portfolio/img (52).jpg", 
+"/img/portfolio/img (53).jpg", "/img/portfolio/img (54).jpg", "/img/portfolio/img (55).jpg", "/img/portfolio/img (56).jpg", 
+"/img/portfolio/img (57).jpg", "/img/portfolio/img (58).jpg", "/img/portfolio/img (59).jpg", "/img/portfolio/img (60).jpg", 
+"/img/portfolio/img (61).jpg", "/img/portfolio/img (62).jpg", "/img/portfolio/img (63).jpg"];
 var currentImageIndex;
 
 document.querySelectorAll(".thumbnail").forEach(function(thumbnail, index) {
