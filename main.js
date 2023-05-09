@@ -1,3 +1,37 @@
+/* 메인 홈페이지 아이콘 숨김을 위한 코드 */
+
+function toggleBtn1() {
+  
+	// 토글 할 버튼 선택 (btn1)
+	const btn1 = document.getElementById('show-popup1');
+	const btn2 = document.getElementById('show-popup2');
+	const btn3 = document.getElementById('show-popup3');
+	const btn4 = document.getElementById('show-popup4');
+	const btn5 = document.getElementById('show-popup5');
+	const btn6 = document.getElementById('show-popup6');
+	
+	
+	// btn1 숨기기 (visibility: hidden)
+	if(btn1.style.visibility !== 'hidden') {
+	  btn1.style.visibility = 'hidden';
+	  btn2.style.visibility = 'hidden';
+	  btn3.style.visibility = 'hidden';
+	  btn4.style.visibility = 'hidden';
+	  btn5.style.visibility = 'hidden';
+	  btn6.style.visibility = 'hidden';
+	}
+	// btn` 보이기 (visibility: visible)
+	else {
+	  btn1.style.visibility = 'visible';
+	  btn2.style.visibility = 'visible';
+	  btn3.style.visibility = 'visible';
+	  btn4.style.visibility = 'visible';
+	  btn5.style.visibility = 'visible';
+	  btn6.style.visibility = 'visible';
+	}	
+  }
+
+
 /* 갤러리 팝업을 위한 코드 */
 //var images = ["/img/portfolio/1.png", "/img/portfolio/2.png", "/img/portfolio/3.png", "/img/portfolio/4.png", "/img/portfolio/5.png"];
 var images = [
